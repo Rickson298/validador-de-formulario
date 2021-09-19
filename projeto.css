@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/fundo.jpeg);
+    background-size: cover;
+    background-position: center  ;
+    overflow: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.rightside {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    height: calc(100vh - 15px);
+    border-radius: 15px;
+}
+.rightside label {
+    display: block;
+    margin-bottom: 20px;
+   
+}
+.rightside input {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+}
+
+input[type="submit"]{
+    cursor:pointer;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    border-radius: 25px;
+    transition: all linear .2s;   
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(0, 120, 0, 0.7);
+    color: white;
+}
+
+
+.error {
+   
+    margin-top: -2px;
+    font-size: 11px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #FFF;
+    padding: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
